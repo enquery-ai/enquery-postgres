@@ -10,6 +10,7 @@ conn = psycopg.connect(
     password='enquelpass',
     autocommit=True
 )
+
 conn.execute('CREATE EXTENSION IF NOT EXISTS vector')
 register_vector(conn)
 
